@@ -1,0 +1,2 @@
+.Invoice-table tr:nth-child(odd) {background: #FFF}
+.Invoice-table tr:nth-child(even) {background: #CCC}
