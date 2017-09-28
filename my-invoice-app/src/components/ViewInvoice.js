@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Table} from 'react-bootstrap';
-import '../styles/viewInvoice.css';
+import '../styles/ViewInvoice.css';
 import {getInvoiceList} from '../Utils/util.js'
 
 class ViewInvoice extends Component {
