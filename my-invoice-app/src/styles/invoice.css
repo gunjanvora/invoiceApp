@@ -1,0 +1,13 @@
+.Invoice-container {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.ItemLine-table-header h4 {
+  display: inline-block;
+  width: 400px;
+}
+
+.Total-amount {
+  font-size: 20px;
+}

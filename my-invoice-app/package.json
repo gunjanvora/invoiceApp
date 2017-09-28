@@ -1,0 +1,28 @@
+{
+  "name": "my-invoice-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-scripts": "1.0.11",
+    "react-bootstrap": "0.31.3",
+    "react-bootstrap-datetimepicker" : "0.0.3",
+    "react-bootstrap-date-picker" : "5.1.0",
+    "react-datetime" : "2.10.2",
+    "react-bootstrap-table" : "4.0.5",
+    "chai": "^4.1.2",
+    "enzyme": "^2.9.1",
+    "sinon": "^3.3.0",
+    "lodash": "^4.16.2",
+    "dateformat": "3.0.2",
+    "email-validator": "1.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
