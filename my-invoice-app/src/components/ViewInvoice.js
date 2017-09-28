@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Table} from 'react-bootstrap';
+import {Table, ListGroup, ListGroupItem} from 'react-bootstrap';
 import '../styles/ViewInvoice.css';
 import {getInvoiceList} from '../Utils/util.js'
 
@@ -15,6 +15,11 @@ class ViewInvoice extends Component {
   render() {
     return (
       <div className="Invoice-table">
+      {!this.state.invoices &&
+        <ListGroup>
+          <ListGroupItem bsStyle="danger">We are having some issue. Please Try again later.</ListGroupItem>
+        </ListGroup>
+      }
       <Table responsive>
     <thead>
       <tr>
