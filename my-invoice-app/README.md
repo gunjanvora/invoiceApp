@@ -2,8 +2,7 @@ Invoice app
 
 ## Introduction
 
-React based Invoice app. T
-his app was created using [create-react-app](https://github.com/facebookincubator/create-react-app)
+React based Invoice app. This app was created using [create-react-app](https://github.com/facebookincubator/create-react-app)
 
 ## Prerequisites
 
