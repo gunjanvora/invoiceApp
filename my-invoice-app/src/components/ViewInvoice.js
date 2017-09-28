@@ -10,14 +10,15 @@ class ViewInvoice extends Component {
     this.state = {
       invoices: getInvoiceList(),
     };
+    console.log(this.state.invoices);
   }
 
   render() {
     return (
       <div className="Invoice-table">
-      {!this.state.invoices &&
+      {this.state.invoices.error &&
         <ListGroup>
-          <ListGroupItem bsStyle="danger">We are having some issue. Please Try again later.</ListGroupItem>
+          <ListGroupItem bsStyle="danger">We are having some issue. You may not see the entire list.</ListGroupItem>
         </ListGroup>
       }
       <Table responsive>
@@ -32,8 +33,8 @@ class ViewInvoice extends Component {
       </tr>
     </thead>
     <tbody>
-    {this.state.invoices &&
-    this.state.invoices.map((item) => (
+    {this.state.invoices.list &&
+    this.state.invoices.list.map((item) => (
             <tr key={item.id}>
               <td>{item.id}</td>
               <td>{item.name}</td>
